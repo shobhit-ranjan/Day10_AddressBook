@@ -2,15 +2,14 @@ import java.util.Scanner;
 
 public class AdressBookUC1 {
 
-
 	private static String FIRST_NAME;
 	private static String LAST_NAME;
 	private static String CITY;
 	private static String STATE;
 	private static String COUNTRY;
-	private static long MOBLIE_NUMBER,PIN_CODE;
+	private static long MOBLIE_NUMBER, PIN_CODE;
 
-	public static void addContact() {
+	public void addContact() {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter the First name");
 		FIRST_NAME = input.nextLine();
@@ -29,17 +28,15 @@ public class AdressBookUC1 {
 
 		System.out.println("Enter the Zip");
 		PIN_CODE = input.nextLong();
-		
+
 		System.out.println("Enter the your country");
 		COUNTRY = input.nextLine();
 
 		input.close();
-		
-		 DispalyInfo();
 
 	}
 
-	public static void DispalyInfo() {
+	public void DispalyInfo() {
 		System.out.println("your name is : " + FIRST_NAME);
 		System.out.println("your last  is : " + LAST_NAME);
 		System.out.println("your city is : " + CITY);
