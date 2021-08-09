@@ -46,4 +46,10 @@ public class AdressBookUC1 {
 		System.out.println("your pin code is : " + PIN_CODE);
 
 	}
-}
+	
+	public void EditContant() {
+	}
+	}
+	
+	
+
